@@ -13,7 +13,12 @@ public class Main
         System.out.println(game.scoreGuess("aaa"));
         System.out.println(game.scoreGuess("aabb"));
         System.out.println(game.scoreGuess("c"));
-        WordMatch game2 = new WordMatch("concentration");
-        System.out.println(game2.scoreGuess("ten"));
+        WordMatch game = new WordMatch("concentration");
+        System.out.println(game.scoreGuess("ten"));
+        System.out.println(game.scoreGuess("nation"));
+        System.out.println(game.findBetterGuess("ten", "nation"));
+        System.out.println(game.scoreGuess("con"));
+        System.out.println(game.scoreGuess("cat"));
+        System.out.println(game.findBetterGuess("con", "cat"));
     }
 }
